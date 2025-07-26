@@ -1,5 +1,5 @@
 import pandas as pd
-bank = pd.read_csv("C:\\Users\\User\\Downloads\\Datasets\\Financial_inclusion_dataset.csv")
+bank = pd.read_csv("Financial_inclusion_dataset.csv")
 #%%
 from sklearn.preprocessing import LabelEncoder
 
@@ -32,7 +32,6 @@ import streamlit as st
 import joblib
 import numpy as np
 
-#bank2 = pd.read_csv("C:\\Users\\User\\Downloads\\Datasets\\Financial_inclusion_dataset.csv")
 
 joblib.dump(logreg, "Regression for bank account.pkl")
 joblib.dump(stan, "standardScaler.pkl")
